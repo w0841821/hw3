@@ -34,13 +34,15 @@ int main()
 
 	switch (menu)
 	{
-		// Communications Failure
+		// Specification C1 - Communications Failure
+		// Specification B1 - Main Menu with Characters
+		// Specification A2 - Upper and Lower Case
 		case 'c':
 		case 'C': cout << "\nYou picked Communications Failure.\n";
 			cout << "Switch to alternate radio.\n\n";
 		break;
 
-		// Engine Failure
+		// Specification C2 - Engine Failure
 		case 'e':
 		case 'E': cout << "\nYou picked Engine Failure.\n\n";
 		
@@ -179,7 +181,7 @@ int main()
 			}
 		break;
 
-		// In-Flight Icing
+		// Specification C3 - In-Flight Icing
 		case 'i':
 		case 'I': cout << "\nYou picked In-Flight Icing.\n";
 			cout << "How much ice is on the wings? (in mm, between 0 and 10)\n";
@@ -208,15 +210,18 @@ int main()
 			// out of range
 			else
 			{
+				// Specification A1 - De-icing Range Check
 				cout << "\nThat is an invalid entry. Remember to enter between 0 and 10.\n";
 				cout << "Run the program again!\n\n";
 			}
 		break;
 
+		// Specification C4 - Quit
 		case 'q':
 		case 'Q': cout << "\nYou picked Quit!!!\n\n";
 
 		// invalid entry
+		// Specification B2 - Main Menu Data Entry Check
 		default: cout << "\nThat is an invalid entry. Remember to select C, E, I, or Q.\n\n";
 	}
 
